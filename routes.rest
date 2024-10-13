@@ -1,0 +1,33 @@
+### HOMEPAGE
+GET http://localhost:3000
+
+### GET ALL USERS
+GET http://localhost:3000/users
+
+### FIND USER BY ID
+GET http://localhost:3000/users/1234
+
+### ADD USER
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "first_name":"test",
+    "last_name":"test",
+    "email":"test@test.com" 
+}
+
+### PATCH USER
+PATCH http://localhost:3000/users/1234
+Content-Type: application/json
+
+{
+    "first_name":"test updated",
+    "last_name":"test updated",
+    "email":"test_updated@test.com" 
+}
+
+
+### DELETE USER
+DELETE http://localhost:3000/users/1234
+
